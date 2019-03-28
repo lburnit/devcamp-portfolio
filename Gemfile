@@ -60,3 +60,6 @@ gem 'friendly_id', '~> 5.2.4'
 # Use Devise for authentication
 gem 'devise', '~> 4.6', '>= 4.6.1'
 
+# Require Ostruct
+gem 'ostruct', '~> 0.1.0'
+
