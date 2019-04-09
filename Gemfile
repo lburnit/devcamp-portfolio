@@ -64,3 +64,8 @@ gem 'devise', '~> 4.6', '>= 4.6.1'
 # Require Ostruct
 gem 'ostruct', '~> 0.1.0'
 
+# Require Bootstrap
+gem 'bootstrap', '~> 4.3.1'
+
+# Require JQueery
+gem 'jquery-rails'
