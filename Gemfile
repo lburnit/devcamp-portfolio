@@ -69,3 +69,6 @@ gem 'bootstrap', '~> 4.3.1'
 
 # Require JQueery
 gem 'jquery-rails'
+
+# Require Burnit View Tool
+gem 'burnit_view_tool', git: 'https://github.com/lburnit/burnit_view_tool'
