@@ -72,3 +72,6 @@ gem 'jquery-rails'
 
 # Require Burnit View Tool
 gem 'burnit_view_tool', '~> 0.1.1'
+
+# Require Petergate 
+gem 'petergate', '~> 2.0', '>= 2.0.1'
