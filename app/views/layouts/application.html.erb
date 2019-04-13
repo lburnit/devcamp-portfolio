@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <title><%= @page_title %></title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -13,25 +16,25 @@
 
   <body>
 
-      <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-        <div class="site-wrapper">
-          <div class="text-center" role="main" class="inner cover">
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
 
             <%= render "shared/application_nav"%>
 
-            <div class="contentcss">
-
-            <%= login_helper %>
             
+        
             <%= yield %>
 
-            <%= copyright_generator %>
+            <%= render "shared/application_footer"%>
 
             <%= source_helper("application") %> 
-          </div>
-          </div>
+
         </div>
       </div>
+    </div>
   </body>
 </html>
 
