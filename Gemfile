@@ -75,3 +75,13 @@ gem 'burnit_view_tool', '~> 0.1.1'
 
 # Require Petergate 
 gem 'petergate', '~> 2.0', '>= 2.0.1'
+
+# Require Font awesome 
+gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.1'
+
+# Require Kaminari
+gem 'kaminari', '~> 1.1', '>= 1.1.1'
+
+
+
+
