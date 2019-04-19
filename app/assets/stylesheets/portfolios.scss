@@ -68,16 +68,17 @@ footer p {
 } 
 
 
-.navbar-inverse .navbar-toggler {
-    border-color: rgba(255,255,255,.1);
-}
 
 .navbar-inverse .navbar-brand, .navbar-inverse .navbar-toggler {
     color: #fff;
 }
 
 .navbar-inverse .navbar-toggler-icon {
-    background-color: white;
+    position: relative;
+    display: inline-block;
+    height: 0.6em;
+    border-top: 0.1em solid #fff;
+    border-bottom: 0.1em solid #fff;
 }
 
 
