@@ -63,7 +63,7 @@ footer p {
  */
 
 .bg-inverse {
-  background-color: #292b2c!important;
+  background-color: #000!important;
 } 
 
 
@@ -76,10 +76,12 @@ footer p {
     position: relative;
     display: inline-block;
     height: 0.6em;
-    border-top: 0.1em solid #fff;
-    border-bottom: 0.1em solid #fff;
+    border-top: 0.1em solid #E4BA02;
+    border-bottom: 0.1em solid #EB9101;
 }
 
-
+.portfolio-form {
+  padding: 20px;
+}
 
 
