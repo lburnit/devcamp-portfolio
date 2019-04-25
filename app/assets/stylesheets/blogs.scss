@@ -18,8 +18,6 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
   color: #333;
 }
 
@@ -38,7 +36,7 @@ h6, .h6 {
  */
 
 .blog-masthead {
-  margin-bottom: 3rem;
+  margin-bottom: 3.3rem;
   background-color: #428bca;
   -webkit-box-shadow: inset 0 -.1rem .25rem rgba(0,0,0,.1);
           box-shadow: inset 0 -.1rem .25rem rgba(0,0,0,.1);
@@ -93,11 +91,13 @@ h6, .h6 {
 .blog-description {
   font-size: 1.1rem;
   color: #999;
+  text-align: center;
 }
 
 @media (min-width: 40em) {
   .blog-title {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
+    text-align: center;
   }
 }
 
@@ -175,3 +175,26 @@ h6, .h6 {
 .Princes-Trust span a {
   color: #D20047;
 }
+
+.jumbotron {
+  margin-bottom: 0;
+  background-color: #fff;
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 7.7rem;
+}
+
+.jumbotron-heading {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+.jumbotron {
+    padding: 0rem;
+}
+
+
