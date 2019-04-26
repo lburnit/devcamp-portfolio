@@ -1,7 +1,11 @@
-<div class="blog-header">
+<div class="jumbotron text-center">
   <div class="container">
-    <h1 class="blog-title">My Blog</h1>
-    <p class="lead blog-description">An example blog template built with Bootstrap.</p>        
-    <%= link_to 'Write a New Blog', new_blog_path if logged_in?(:site_admin) %>
+    <h1 class="jumbotron-heading">My Blog.</h1>
+    <p class="lead blog-description">Here you will find great resources for exercise, general health and food. If you have any requests on what to write about, please let me know. Lets create a community where everyone can grow.</p> 
+
+    <!--<a target="_blank" rel="noopener noreferrer" href="https://open.spotify.com/playlist/0sgrwHT59BVN1op2InCzE3" class="btn btn-primary"><%= fa_icon "users" %> Join Our Community</a>  
+    <%= link_to 'Join Our Community', new_user_registration_path, class: "btn btn-primary" %> -->    
+    
+    <p><%= link_to 'Write a New Blog', new_blog_path if logged_in?(:site_admin) %></p>
   </div>
 </div>

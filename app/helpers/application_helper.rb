@@ -40,7 +40,7 @@ module ApplicationHelper
       },
       {
         url: portfolios_path,
-        title: 'Portfolio'
+        title: 'Workouts'
       },
     ]
   end
