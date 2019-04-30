@@ -200,6 +200,7 @@ body {
  * REPLACE BACKGROUND IMAGE-URL('... within app/assets/images') EP 169
  */
 
+
 #background {
   position: fixed;
   top: 50%;
@@ -211,10 +212,8 @@ body {
   z-index: -100;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: image-url('home_bg.png') no-repeat; 
+  background: image-url('LW_Home.JPG') no-repeat; 
   background-size: cover;
 }
-
-
 
 
