@@ -15,3 +15,5 @@ CarrierWave.configure do |config|
     stub_responses:    Rails.env.test?
   }
 end
+
+#lecture 172 getting images from amazon server instead of preloaded. makes website faster

@@ -2,7 +2,7 @@
 <div class="container portfolio-form">
   <div class="row">
     <div class="col-md-8">
-      <%= image_tag @portfolio_item.main_image.to_s, width: '100%' %> <!-- had to add .to_s, width: '100%' -->
+      <%=image_tag portfolio_img(@portfolio_item.thumb_image, 'thumb'), width: '100%' %> <!-- had to add .to_s, width: '100%' -->
     </div>
     
 <div class="col-md-4">
