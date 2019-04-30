@@ -30,7 +30,6 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #333;
 }
 body {
   color: #fff;
@@ -195,6 +194,26 @@ body {
 .social-media-links a {
   font-size: 29px;
   padding: 7px;
+}
+
+/*
+ * REPLACE BACKGROUND IMAGE-URL('... within app/assets/images') EP 169
+ */
+
+
+#background {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: image-url('LW_Home.JPG') no-repeat; 
+  background-size: cover;
 }
 
 

@@ -85,4 +85,18 @@ gem 'kaminari', '~> 1.1', '>= 1.1.1'
 # Require JQuery
 gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
 
+# Require Carrierwave 
+gem 'carrierwave', '~> 1.3', '>= 1.3.1'
+
+# Require Mini-magick 
+gem 'mini_magick', '~> 4.9', '>= 4.9.3'
+
+# Require Carrierwave AWS
+gem 'carrierwave-aws', '~> 1.3'
+
+# Require Dotenv-rails
+gem 'dotenv-rails', '~> 2.7', '>= 2.7.2'
+
+
+
 
