@@ -2,7 +2,7 @@
 <div class="container portfolio-form">
   <div class="row">
     <div class="col-md-8">
-      <%=image_tag portfolio_img(@portfolio_item.thumb_image, 'thumb'), width: '100%' %> <!-- had to add .to_s, width: '100%' -->
+      <%=image_tag portfolio_img(@portfolio_item.main_image.to_s, 'main'), width: '70%'%> <!-- had to add .to_s, width: '100%' -->
     </div>
     
 <div class="col-md-4">
@@ -16,13 +16,18 @@
 
   <hr>
 
-  <h3>Technologies Used: </h3>
+  <h3>Tags: </h3>
 
   <% @portfolio_item.technologies.each do |t| %>
   <p><%= t.name %></p>
   <% end %>
   <!--Replace portfolios path to workout index -->
   
+  <% if logged_in?(:site_admin) %>
+  <div>
+    <%= link_to "Edit Tag", edit_portfolio_path(@portfolio_item), class: 'btn btn-warning' %>
+  </div>
+  <% end %>
 
     </div>  
   </div>  
