@@ -157,7 +157,7 @@ body {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 55rem;
+    width: 65rem;
   }
 }
 
@@ -217,4 +217,15 @@ body {
   background-size: cover;
 }
 
+.get-motivated {
+  color: black;
+  margin: 20px;
+}
 
+.get-motivated a {
+  color: #D20047;
+}
+
+.get-motivated > .card {
+  padding: 30px;
+}

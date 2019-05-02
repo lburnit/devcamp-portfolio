@@ -42,6 +42,10 @@ module ApplicationHelper
         url: portfolios_path,
         title: 'Workouts'
       },
+      {
+        url: get_motivated_path,
+        title: 'Get Motivated'
+      },
     ]
   end
 
