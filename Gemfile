@@ -97,6 +97,6 @@ gem 'carrierwave-aws', '~> 1.3'
 # Require Dotenv-rails
 gem 'dotenv-rails', '~> 2.7', '>= 2.7.2'
 
-
-
+# Require Cocoon
+gem 'cocoon', '~> 1.2', '>= 1.2.12'
 

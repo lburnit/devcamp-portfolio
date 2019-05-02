@@ -35,15 +35,16 @@
 <hr>
 
   <div class="col-md-12">
-    <h2>Technologies Used: </h2> <!--replace me -->
+    <h2>Tags: </h2> <!--replace me -->
 
     <div>  
       <%= f.fields_for :technologies do |technology_form| %>
-      <div class="form-group">
-        <%= technology_form.label :name %>
-        <%= technology_form.text_field :name, class: 'form-control' %>
-      </div>
+        <%= render 'technology_fields', f: technology_form %>
       <% end %>
+
+      <div>
+        <%= link_to_add_association 'Add Tag', f, :technologies %>
+      </div>
      </div> 
 
     <div class="form-group">
