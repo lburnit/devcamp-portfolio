@@ -103,3 +103,5 @@ gem 'cocoon', '~> 1.2', '>= 1.2.12'
 # Require Gritter
 gem 'gritter', '~> 1.2'
 
+# Require Twitter
+gem 'twitter', '~> 6.2'
