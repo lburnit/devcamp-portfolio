@@ -100,3 +100,6 @@ gem 'dotenv-rails', '~> 2.7', '>= 2.7.2'
 # Require Cocoon
 gem 'cocoon', '~> 1.2', '>= 1.2.12'
 
+# Require Gritter
+gem 'gritter', '~> 1.2'
+
