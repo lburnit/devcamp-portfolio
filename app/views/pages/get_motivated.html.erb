@@ -1,0 +1,20 @@
+<div class="inner cover">
+  <h1 class="cover-heading">Get Motivated!</h1>
+  <p> These people on twitter are in the same boat as you are. Lets try motivate eachother and show support</p>
+  
+  <div class="row">
+    <% @tweets.each do |tweet| %>
+      <div class="col-md-6">
+        <div class="get-motivated">
+          <div class="card">
+            <%= tweet %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+</div>
+
+
+
