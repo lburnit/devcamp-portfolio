@@ -12,3 +12,5 @@ module SocialTool
     end
   end 
 end 
+
+# burnitchallenge hashtag on twitter
