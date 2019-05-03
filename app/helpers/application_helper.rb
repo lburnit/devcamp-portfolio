@@ -35,6 +35,10 @@ module ApplicationHelper
         title: 'Contact'
       },
       {
+        url: get_motivated_path,
+        title: 'Get Motivated'
+      },
+      {
         url: blogs_path,
         title: 'Blogs'
       },
@@ -42,10 +46,7 @@ module ApplicationHelper
         url: portfolios_path,
         title: 'Workouts'
       },
-      {
-        url: get_motivated_path,
-        title: 'Get Motivated'
-      },
+      
     ]
   end
 

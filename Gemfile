@@ -105,3 +105,6 @@ gem 'gritter', '~> 1.2'
 
 # Require Twitter
 gem 'twitter', '~> 6.2'
+
+# Require Redis
+gem 'redis', '~> 4.1'
