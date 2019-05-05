@@ -10,7 +10,7 @@
 a,
 a:focus,
 a:hover {
-  color: #fff;
+  color: white;
 }
 
 /* Custom default button */
@@ -18,7 +18,7 @@ a:hover {
 .btn-secondary:hover,
 .btn-secondary:focus {
   text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: #3E78B2;
+  background-color: #4F84B9;
 }
 
 
@@ -193,6 +193,11 @@ body {
 .social-media-links a {
   font-size: 29px;
   padding: 7px;
+  color: #E8E8E8
+}
+
+.social-media-links {
+  color: white;
 }
 
 
@@ -228,3 +233,104 @@ body {
   color: #E8E8E8
 }
 
+.btn-secondary {
+  border: 0;
+  background-color: #4B7BAA
+}
+
+.btn-secondary:hover a {
+  background-color: #396EA2;
+}
+
+.grow:hover {
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+@-webkit-keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+       transform: translateX(-5px);
+    } 
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+@keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+.swing:hover
+{
+        -webkit-animation: swing 1s ease;
+        animation: swing 1s ease;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+}
+
+.contact-me a{
+  color: #E8E8E8
+}
+
+.contact-me:hover a{
+  color: white
+}
+
+.YT:hover a, .IG:hover a, .FB:hover a, .PT:hover a, .LI:hover a {
+  color: white;
+}

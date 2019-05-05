@@ -76,5 +76,4 @@ module ApplicationHelper
       js add_gritter(msg, title: "Leon Ward's BurnIt Challenge", sticky: false, time: 3500)
   end 
 
-
 end
