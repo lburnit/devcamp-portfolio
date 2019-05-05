@@ -17,10 +17,8 @@ a:hover {
 .btn-secondary,
 .btn-secondary:hover,
 .btn-secondary:focus {
-  color: #333;
   text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: #fff;
-  border: .05rem solid #fff;
+  background-color: #3E78B2;
 }
 
 
@@ -197,10 +195,6 @@ body {
   padding: 7px;
 }
 
-/*
- * REPLACE BACKGROUND IMAGE-URL('... within app/assets/images') EP 169
- */
-
 
 #background {
   position: fixed;
@@ -229,3 +223,8 @@ body {
 .get-motivated > .card {
   padding: 30px;
 }
+
+.btn {
+  color: #E8E8E8
+}
+
