@@ -204,9 +204,10 @@ h6, .h6 {
 }
 
 .comment-attribution {
-  font-size: .8em;
-  font-style: italic;
-  padding: 10px;
+    font-size: .8em;
+    font-style: italic;
+    padding-left: 30px;
+    padding-bottom: 20px;
 }
 
 .comment-name {
@@ -222,5 +223,12 @@ h6, .h6 {
 
 .content {
   padding: 10px;
-  padding-right: 30px;
+  padding-right: 20px;
+  padding-left: 30px;
 }
+
+.profile-picture img {
+  border-radius: 50%;
+
+}
+

@@ -4,17 +4,14 @@
       <div class="row">
         <div class="col-md-2">
           <div class="container content-picture">
-          <%= gravatar_helper comment.user %> 
-        </div>
+            <span class="profile-picture"><%= gravatar_helper comment.user %></span> 
+          </div>
         </div>
 
         <div class="col-md-10">
           <div class="content">
             <%= comment.content %>
           </div>
-
-          <!--<div class="col-md-1">
-          </div>-->
 
           <div class="comment-attribution">
             Comment posted by <span class="comment-name"><%= comment.user.first_name %></span> <%= distance_of_time_in_words(comment.created_at, Time.now)%>
