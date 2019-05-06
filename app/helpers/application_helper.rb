@@ -36,7 +36,7 @@ module ApplicationHelper
       },
       {
         url: get_motivated_path,
-        title: 'Get Motivated'
+        title: '#Burnitchallenge'
       },
       {
         url: blogs_path,

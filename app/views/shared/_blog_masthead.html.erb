@@ -10,7 +10,9 @@
       <%= link_to 'Write a New Blog', new_blog_path if logged_in?(:site_admin) %></p>
     </span>
     <span>
-      <%= link_to "Topics", topics_path %>
+      <a class="btn btn-primary" href="/blogs"> View All Blogs</a>
+      <a class="btn btn-primary" href="/topics"> View All Topics</a>
+      <!--<a class="btn btn-primary" href="/topics/6"> Well-being</a>-->
     </span>
   </div>
 </div>
