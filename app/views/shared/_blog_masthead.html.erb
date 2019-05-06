@@ -6,6 +6,11 @@
     <!--<a target="_blank" rel="noopener noreferrer" href="https://open.spotify.com/playlist/0sgrwHT59BVN1op2InCzE3" class="btn btn-primary"><%= fa_icon "users" %> Join Our Community</a>  
     <%= link_to 'Join Our Community', new_user_registration_path, class: "btn btn-primary" %> -->    
     
-    <p><%= link_to 'Write a New Blog', new_blog_path if logged_in?(:site_admin) %></p>
+    <p><span>
+      <%= link_to 'Write a New Blog', new_blog_path if logged_in?(:site_admin) %></p>
+    </span>
+    <span>
+      <%= link_to "Topics", topics_path %>
+    </span>
   </div>
 </div>
