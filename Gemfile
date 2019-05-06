@@ -108,3 +108,11 @@ gem 'twitter', '~> 6.2'
 
 # Require Redis
 gem 'redis', '~> 4.1'
+
+# Require Redcarpet 
+gem 'redcarpet', '~> 3.4'
+
+# Require Coderay
+gem 'coderay', '~> 1.1', '>= 1.1.2'
+
+
