@@ -205,7 +205,7 @@ h6, .h6 {
 }
 
 .jumbotron {
-    padding: 0rem;
+    padding: 40px;
 }
 
 .comment-card > .card {
@@ -290,4 +290,34 @@ h6, .h6 {
 .admin-actions {
   color: #D62839;
   font-weight: 600;
+}
+
+.navbar {
+  padding: 2px;
+}
+
+button:focus {outline:0;}
+
+.navbar-toggler {
+  border: none;
+  padding-right: 20px;
+}
+
+.navbar-light .navbar-toggler-icon  {
+    position: relative;
+    display: inline-block;
+    height: 0.6em;
+    border-top: 0.1em solid #191919;
+    border-bottom: 0.1em solid #191919;
+    background: none;
+
+}
+
+.navbar-light .navbar-brand {
+    color: rgba(0, 0, 0, 0.9);
+    padding-left: 30px;
+    }
+
+.bg-light {
+    background-color: transparent !important;
 }
