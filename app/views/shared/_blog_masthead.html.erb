@@ -10,8 +10,10 @@
       <%= link_to 'Write a New Blog', new_blog_path if logged_in?(:site_admin) %></p>
     </span>
     <span>
-      <%= link_to 'View All Blogs', blogs_path, class: 'btn btn-primary' %>
-      <%= link_to 'View All Topics', topics_path, class: 'btn btn-primary' %>
+      <%= link_to 'View All Blogs', blogs_path, class: 'flat-button' %>
+      <a href="/topics/7" class="flat-button-health"> Health</a>
+      <a href="/topics/6" class="flat-button-wellbeing"> Well-being</a>
     </span>
   </div>
 </div>
+
