@@ -1,0 +1,8 @@
+  <% if logged_in?(:site_admin) %>
+   <nav class="breadcrumb blogcrumb">
+    <span class="admin-actions">Admin Actions |</span> 
+    <%= link_to fa_icon('file-text'), toggle_status_blog_path(blog), style: blog_status_color(blog) %> Publish 
+    <%= link_to fa_icon('pencil-square-o'), edit_blog_path(blog) %> Edit
+    <%= link_to fa_icon('trash'), blog, method: :delete, data: { confirm: 'Are you sure?' } %> Delete
+   </nav> 
+  <% end %>
