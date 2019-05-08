@@ -9,11 +9,20 @@
     <p><span>
       <%= link_to 'Write a New Blog', new_blog_path if logged_in?(:site_admin) %></p>
     </span>
-    <span class="row">
+    <div class="row">
       <span class="col-md-4"><%= link_to 'View All Blogs', blogs_path, class: 'flat-button' %></span>
       <span class="col-md-4"><a href="/topics/7" class="flat-button-health"> Health</a></span>
-      <span class="col-md-4"><a href="/topics/6" class="flat-button-wellbeing"> Well-being</a></span>
-    </span>
+      <span class="col-md-4"><a href="/topics/6" class="flat-button-wellbeing"> Wellbeing</a></span>
+    </div>
+
+     <!--<<div class="row">
+
+   span class="col-md-6"></span>
+      <span><%= link_to 'View All Blogs', blogs_path, class: 'flat-button' %></span>
+      <span><a href="/topics/7" class="flat-button-health"> Health</a></span>
+      <span><a href="/topics/6" class="flat-button-wellbeing"> Wellbeing</a></span>-->
+    
+
   </div>
 </div>
 
