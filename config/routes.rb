@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get 'about-me', to: 'pages#about'
   get 'contact', to: 'pages#contact'
   get 'get-motivated', to: 'pages#get_motivated'
+  get 'my-story', to: 'pages#my_story'
   
   
   resources :blogs do 
