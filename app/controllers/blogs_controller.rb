@@ -8,12 +8,13 @@ class BlogsController < ApplicationController
   # GET /blogs.json
   def index
     if logged_in?(:site_admin)
-    @blogs = Blog.recent.page(params[:page]).per(5)
-  else 
-    @blogs = Blog.published.recent.page(params[:page]).per(5)
-  end   
-    @page_title = "My Portfolio Blog"
+      @blogs = Blog.recent.page(params[:page]).per(5)
+    else 
+      @blogs = Blog.published.recent.page(params[:page]).per(5)
+    end   
+      @page_title = "My Portfolio Blog"
   end
+    
 
   # GET /blogs/1
   # GET /blogs/1.json
@@ -27,6 +28,9 @@ class BlogsController < ApplicationController
     else 
      redirect_to blogs_path, notice: "You are not authorized to access this page"
     end 
+
+
+    @comment_show = @blog.comments.count 
   end
 
   # GET /blogs/new
@@ -83,6 +87,10 @@ class BlogsController < ApplicationController
           
     redirect_to blogs_url, notice: 'Post status has been updated.'
   end  
+
+  def count
+    @comment_count = @blog.comments.count(:params[:comment])
+  end
 
   private
     # Use callbacks to share common setup or constraints between actions.

@@ -14,7 +14,4 @@ class PagesController < ApplicationController
   def get_motivated
     @tweets = SocialTool.twitter_search
   end
-
-  def my_story
-  end 
 end

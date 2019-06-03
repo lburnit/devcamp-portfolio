@@ -1,0 +1,31 @@
+<div class="col-12 row-spacing">
+</div>
+
+<div class="col-12 d-none d-md-block form">
+  <form>
+    <button class="flat-button" formaction="/blogs">View All Blogs<!--<%= " (#{Blog.published.count})" %>--></button>
+      <button class="flat-button-health"formaction="/topics/7">Health<!--<%= " (#{@topic_count})" %>--></button><!-- Brkn Link when db drop, must console add topic and redefine path -->
+    <button class="flat-button-wellbeing" formaction="/topics/6">Wellbeing<!--<%= " (#{@topic_count})" %>--></button><!-- Brkn Link when db drop, must console add topic and redefine path -->
+  </form>
+</div>
+
+<div class="container d-md-none row-spacing2">
+  <div class="row">
+    <div class="col-6">
+      <form>
+      <button id="revealBtn" formaction="/blogs">View All Blogs</button>
+    </div>
+    
+    <div class="col-6">
+      <button id="revealBtn2" formaction="/topics/7">Health</button>
+    </div>
+    
+    <div class="col-6">
+      <button id="revealBtn3" formaction="/topics/6">Wellbeing</button>
+    </div>
+      </form>
+  </div> 
+</div>
+
+
+

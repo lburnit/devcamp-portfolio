@@ -15,28 +15,39 @@
   </head>
 
   <body>
-
-    <!--Start of nav -->
-     <%= render 'shared/blog_nav' %>
-    <!-- end of nav -->
+    <div class="PermalinkOverlay"></div>
+    <div class="backgroundtest" >
+     <%= render 'shared/storys_nav' %>
 
     <%= render 'shared/blog_masthead' %>
-
+    </div> 
+      <%= render 'shared/blog_buttons' %>
     <!-- start of container and row elements -->
     <div class="container">
 
       <div class="row">
-    <!-- end of container and row elements -->
+
+        <div class="col-3 d-none d-md-block">
+          <%= render 'shared/blog_sidebar' %>
+        </div>
+
+        <div class="col-md-9">
+          <%= yield %>
+        </div>
+
+        <!-- appear bottom when breakpoint after md -->
+        <div class="col-12 d-md-none">
+          <%= render 'shared/blog_sidebar' %>
+        </div>
         
-        <%= yield %>
-
-        <%= render 'shared/blog_sidebar' %>
-        <!-- start of footer -->
-        <%= render 'shared/blog_footer' %>
-        <!-- end of footer -->
-
         <%= alerts %>
       
+      </div>
     </div>
   </body>
+<footer>
+  <!--<div class="progressContainer"><div id="progress" class="progress" ></div></div>-->
+  <%= render 'shared/blog_footer' %>
+</footer>
+
 </html>

@@ -1,0 +1,61 @@
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="contact-details text-center oss">
+        <%= image_tag "Leon_Plunge.jpg", width: '200px' , Height: '200px;', class: 'profile-pic'%>
+        <h2>Leon<h2>
+
+        <div class="ldogg">'LDogg'</div>
+
+          <span class="go-getter"><p> The Go Getter!</p></span>
+          <span><p>Location </span>
+            <span class="location"> | Leeds, UK</p></span>
+          <span><p>Business Only</span> 
+            <span class="email"> <span class="location"> | </span><a href="mailto:leon@burnitchallenge.com?subject=BurnIt Business Enquiry"email me>Email</a></p></span> 
+          <span class="connect"><p>Connect With Me</p></span></span>
+          
+        <div class="social-media-links"> 
+          <span class="YT"><a href="#"><%= fa_icon "youtube-play" %></a></span>
+          <span class="IG"><a href="#"><%= fa_icon "instagram" %></a></span>
+          <span class="FB"><a href="#"><%= fa_icon "facebook" %></a></span>
+          <span class="LI"><a href="#"><%= fa_icon "linkedin" %></a></span>
+        </div>
+
+        <div class="row btn-spacing d-none d-md-block">    
+          <button id="SidebarButton1" class="hidden"> My Story</button>
+          <button id="SidebarButton2">Local Classes</button>
+        </div>
+      </div>
+    </div>
+
+
+      <!--responsive phone fixed -->
+
+  <div class="col-md-9">
+  <%= render 'shared/storys_buttons' %>
+    <div class="container">
+      <div class="row">
+        <div class="d-none d-block d-sm-block d-md-none">
+        </div>
+        <div class="oss1 d-none d-md-block">
+        </div>
+        <div class="card-body" >
+          <div class="row">
+          <%= markdown yield %>
+          <!-- shared location here but hide me -->
+          </div>
+        </div>
+          <span id="location-body"><%= render 'shared/storys_location'%></span>
+      </div>
+    </div>
+  </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+  

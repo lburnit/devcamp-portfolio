@@ -1,10 +1,13 @@
-<div class="col-sm-8 blog-main">
+<div class="blog-main2">
+<%= paginate @blogs %>  
 
-  <%= paginate @blogs %>  
+<span><p>
+  <%= link_to 'Write a New Blog', new_blog_path if logged_in?(:site_admin) %></p>
+</span>
 
-  <%= render @blogs %>
+<%= render @blogs %>
 
-  <%= paginate @blogs %>  
+<%= paginate @blogs %>  
 
 </div>
 

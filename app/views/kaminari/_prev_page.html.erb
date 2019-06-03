@@ -1,1 +1,13 @@
-<%= link_to_unless current_page.first?, raw('&laquo; Newer'), url, :remote => remote do |name| -%><span class="disabled"><%= name %></span><% end -%>
+<% if current_page.first? %>
+  <span class="disabled">
+    <%= content_tag :a do %>
+      <span class="icons">Previous</span>
+    <% end %>
+  </span>
+<% else %>
+  <li class="waves-effect">
+    <%= link_to url, :rel => 'prev', :remote => remote do %>
+      <span class="material-icons">Previous</span>
+    <% end %>
+  </li>
+<% end %>

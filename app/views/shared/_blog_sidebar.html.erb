@@ -1,12 +1,44 @@
-<div class="col-sm-3 offset-sm-1 blog-sidebar">
-    <div class="sidebar-module sidebar-module-inset">
-      <h4>Replace with Ads</h4>
-      <p>Don't be afraid to get stuck in people! I'm more than happy to help you through your fitness journey. Also, im sure many other community members will help. </p>
-    </div>
+<div class="stickyCol">
+  <div class="sidebar-module-inset">
+    <h4>Replace with Ads</h4>
+    <p>Don't be afraid to get stuck in people! I'm more than happy to help you through your fitness journey. Also, im sure many other community members will help. </p>
+  </div>
 
-      <%= source_helper("alert alert-primary blog-sidebar-source") %> 
-    
-    <% if @side_bar_topics %>
+  <%= source_helper("alert alert-primary blog-sidebar-source") %> 
+
+  <div class="row">
+  </div>
+  
+   <div class="row">
+  </div>
+
+  <div class="contact-details">
+    <span><p>Business Only</span> 
+      <span class="email"> <span class="location"> | </span><a href="mailto:leon@burnitchallenge.com?subject=BurnIt Business Enquiry"email me>Email</a></p></span> 
+    <span class="connect"><p>Connect With Me</p></span></span>
+            
+    <div class="social-media-links"> 
+      <span class="YT"><a href="#"><%= fa_icon "youtube-play" %></a></span>
+      <span class="IG"><a href="#"><%= fa_icon "instagram" %></a></span>
+      <span class="FB"><a href="#"><%= fa_icon "facebook" %></a></span>
+      <span class="LI"><a href="#"><%= fa_icon "linkedin" %></a></span>
+    </div>
+  </div>
+
+  <div> 
+    <form>   
+      <button id="SidebarButton3" class="hidden" formaction="/blogs"> View All Blogs</button>
+      <button id="SidebarButton4" class="hidden" formaction="/topics/7">Health</button>
+      <button id="SidebarButton5" class="hidden" formaction="/topics/6">Wellbeing</button>
+    </form>
+  </div>
+
+</div>
+
+
+
+
+    <!--<% if @side_bar_topics %>
       <div class="sidebar-module">
         <h4>Topics</h4>
         <% @side_bar_topics.each do |topic| %>
@@ -14,16 +46,6 @@
         <% end %>
       </div>
     <% end %>
-    
-    <div class="sidebar-module">
-      <h4>Elsewhere</h4>
-      <ol class="list-unstyled social-links">
-        <li><a href="#"><%= fa_icon "youtube" %></a></li>
-        <li><a href="#"><%= fa_icon "facebook" %></a></li>
-        <li><a href="#"><%= fa_icon "twitter" %></a></li>
-        <li><a href="#"><%= fa_icon "instagram" %></a></li>
-      </ol>
-    </div>
-  </div><!-- /.blog-sidebar -->
-  <!-- end of side bar -->
-</div>
+</div>-->
+
+

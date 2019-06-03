@@ -1,22 +1,11 @@
-<div class="comment-card">
-  <div class="card">
-    <div class="card-block">
+<div class="container">
+  <div class="row">
+    <hr class="container">
+    <div class="col-12 comment-attribution">
+      <span class="profile-picture"><%= gravatar_helper comment.user %></span> 
+      <span class="comment-name"><%= comment.user.first_name %></span> <%= distance_of_time_in_words(comment.created_at, Time.now)%>
       <div class="row">
-        <div class="col-md-2">
-          <div class="container content-picture">
-            <span class="profile-picture"><%= gravatar_helper comment.user %></span> 
-          </div>
-        </div>
-
-        <div class="col-md-10">
-          <div class="content">
-            <%= comment.content %>
-          </div>
-
-          <div class="comment-attribution">
-            Comment posted by <span class="comment-name"><%= comment.user.first_name %></span> <%= distance_of_time_in_words(comment.created_at, Time.now)%>
-          </div>
-        </div>
+        <%= comment.content %>
       </div>
     </div>
   </div>

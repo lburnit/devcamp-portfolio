@@ -14,6 +14,9 @@ class TopicsController < ApplicationController
     else 
       @blogs = @topic.blogs.published.recent.page(params[:page]).per(5)
     end 
+
+    @topic_count = @topic.blogs.published.recent.count
+
   end
 
   private
