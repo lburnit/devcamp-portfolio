@@ -1,0 +1,10 @@
+<% if current_user.liked? @comment %>
+  $('#votes-<%= @comment.id %>').html('<%= link_to '', unlike_comment_path(@comment[:id]), class: "like-btn fa fa-heart", method: :get, remote: true %>') 
+<% else %>
+  $('<%= link_to '', like_comment_path(@comment[:id]), class: "like-btn fa fa-heart", method: :get, remote: true  %>') 
+<% end %>
+$('#likes-<%= @comment.id %>').html('<%= @comment.get_likes.size %>');
+
+
+
+

@@ -1,3 +1,7 @@
+$(document).on 'turbolinks:load', ->
+  jQuery('.best_in_place').best_in_place()
+  return
+
 $ ->
   $('#BackToTop').click (event) ->
     $('html, body').animate { scrollTop: '1px' }, 500
@@ -35,3 +39,4 @@ $ ->
     $('#flat-button-wellbeing').show;
     $('#flat-button-wellbeing').removeClass('hidden');
     return
+

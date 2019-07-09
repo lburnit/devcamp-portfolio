@@ -29,5 +29,7 @@ module BlogsHelper
     'color: #D62839;' if blog.draft?
   end
 
+
+
   
 end

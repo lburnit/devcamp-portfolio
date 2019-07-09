@@ -357,3 +357,41 @@ body {
   padding: 10px;
 }
 
+/*
+ * Search Field
+ */
+
+input[id=search]{
+  padding: 5px;
+  color: #2C302E;
+  width: 30%;
+  border-radius: 4px;
+  border: none;
+  height: 35px;
+  text-align: center;
+  caret-color: #197BBD;
+}
+
+input:focus {outline:0;}
+
+input, textarea {
+  color: blue;
+
+}
+
+/*
+ * PSEUDO
+ */
+
+.my-container {
+  border: 1px solid green;
+}
+
+.my-row {
+  border: 3px solid red;
+}
+
+.my-col {
+  border: 3px dotted blue;
+}
+

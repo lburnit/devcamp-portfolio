@@ -11,14 +11,30 @@ Rails.application.routes.draw do
   get 'about-me', to: 'pages#about'
   get 'contact', to: 'pages#contact'
   get 'get-motivated', to: 'pages#get_motivated'
+
   get 'my-story', to: 'storys#my_story'
+
+
+  get "search", to: "searches#index"
   
   
   resources :blogs do 
     member do
       get :toggle_status
     end 
-  end     
+  end   
+
+  resources :comments, only: [:new, :create] do 
+    member do
+      get :reply
+      get 'like', to: "comments#like"
+      get 'unlike', to: "comments#unlike"
+      delete 'destroy', to: "comments#destroy"
+      put 'update-my', to: "comments#update_comment"
+      patch 'edit', to: "comments#edit"
+      get 'discussion', to: "comments#discussion"
+    end
+  end  
   
   mount ActionCable.server => '/cable'
 

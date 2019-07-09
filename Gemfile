@@ -115,4 +115,14 @@ gem 'redcarpet', '~> 3.4'
 # Require Coderay
 gem 'coderay', '~> 1.1', '>= 1.1.2'
 
+# Require Act as votable 
+gem 'acts_as_votable', '~> 0.12.0'
 
+# Require Best In Place
+gem 'best_in_place', '~> 3.0.1'
+
+# Require Ransack
+gem 'ransack', '~> 2.1', '>= 2.1.1'
+
+# Require Ancestry
+gem 'ancestry', '~> 2.1'

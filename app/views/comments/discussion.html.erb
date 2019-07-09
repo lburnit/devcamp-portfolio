@@ -1,0 +1,15 @@
+<%= paginate @comments %>  
+
+<nav class="breadcrumb">
+  <%= link_to "All Blogs", blogs_path, class: 'breadcrumb-item' %>
+  <%= link_to @blog.title, blog_path(@blog) , class: 'breadcrumb-item' %>
+<span class="breadcrumb-item active"> Discussion </span>
+
+<% @comments.each do |comment| %>
+<div> 
+  <%= render partial: 'comments/comment', locals: { comment: comment } %>
+</div>
+
+<% end %>
+
+<%= link_to 'Back', blog_path(@blog) %>

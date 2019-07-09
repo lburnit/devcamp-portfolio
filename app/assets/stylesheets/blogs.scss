@@ -241,18 +241,19 @@ a[href] {
 }
 
 .jumbotron {
-    padding: 40px;
+  padding: 40px;
 }
 
 .comment-attribution {
-    font-size: .8em;
+  font-size: .8em;
+  width: 100%;
 }
 
 hr.container {
-  width: 666px;
-  margin-left: 85px;
-  margin-top: 17px;
-  margin-bottom: 17px;
+  width: 766px;
+  margin-left: 68px;
+  margin-top: 18px;
+  margin-bottom: 10px;
 }
 
 .comment-name {
@@ -633,13 +634,14 @@ input[type="checkbox"] {
     z-index: 9999;
     display: none;
     font-size: 20px;
+    caret-color: #197BBD;
 }
 
 input:focus {outline:0;}
 
 input[id=search]{
   padding: 10px;
-  color: black;
+  color: #2C302E;
 }
 
 /* end of search */
@@ -903,3 +905,57 @@ input[id=search]{
   margin-bottom: 0px;
 }
 
+.comment-attribution a {
+  margin-left: 10px;
+}
+
+.heart-like-unlike a {
+  color: #d14841;
+}
+
+.fa-heart-o:before {
+  color: #d3d3d3;
+}
+
+.likes-count {
+  font-weight: 500;
+  color: #19647E;
+}
+
+.dlt-cmt a {
+  color: #d14841;
+  font-weight: 500;
+}
+
+.edit {
+  color: #2E86AB;
+  font-weight: 400;
+  margin-left: -15px;
+  font-style: italic;
+}
+
+.text-area-resize {
+  width: 100%;
+}
+
+.save-btn {
+  border: none;
+  background-color: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: #2274A5;
+  margin-left: -6px;
+}
+
+.cancle-btn {
+  border: none;
+  background-color: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: #CC2936;
+}
+
+.shwalrpl {
+  margin-left: -59px;
+  color: #999;
+}

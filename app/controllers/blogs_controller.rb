@@ -29,9 +29,13 @@ class BlogsController < ApplicationController
      redirect_to blogs_path, notice: "You are not authorized to access this page"
     end 
 
-
     @comment_show = @blog.comments.count 
+
+    @comments = @blog.comments.order("comments.created_at desc").page(params[:page]).per(10)
+
   end
+
+
 
   # GET /blogs/new
   def new

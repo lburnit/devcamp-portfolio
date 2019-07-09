@@ -42,8 +42,11 @@ GEM
       i18n (>= 0.7, < 2)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
+    acts_as_votable (0.12.0)
     addressable (2.6.0)
       public_suffix (>= 2.0.2, < 4.0)
+    ancestry (2.2.2)
+      activerecord (>= 3.0.0)
     arel (9.0.0)
     autoprefixer-rails (9.5.1)
       execjs
@@ -64,6 +67,9 @@ GEM
     aws-sigv4 (1.1.0)
       aws-eventstream (~> 1.0, >= 1.0.2)
     bcrypt (3.1.12)
+    best_in_place (3.0.3)
+      actionpack (>= 3.2)
+      railties (>= 3.2)
     bindex (0.5.0)
     bootsnap (1.4.0)
       msgpack (~> 1.0)
@@ -220,6 +226,11 @@ GEM
       rake (>= 0.8.7)
       thor (>= 0.19.0, < 2.0)
     rake (12.3.2)
+    ransack (2.1.1)
+      actionpack (>= 5.0)
+      activerecord (>= 5.0)
+      activesupport (>= 5.0)
+      i18n
     rb-fsevent (0.10.3)
     rb-inotify (0.10.0)
       ffi (~> 1.0)
@@ -301,6 +312,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  acts_as_votable (~> 0.12.0)
+  ancestry (~> 2.1)
+  best_in_place (~> 3.0.1)
   bootsnap (>= 1.1.0)
   bootstrap (~> 4.3.1)
   burnit_view_tool (~> 0.1.1)
@@ -327,6 +341,7 @@ DEPENDENCIES
   pry-byebug
   puma (~> 3.11)
   rails (~> 5.2.2)
+  ransack (~> 2.1, >= 2.1.1)
   redcarpet (~> 3.4)
   redis (~> 4.1)
   sass-rails (~> 5.0)

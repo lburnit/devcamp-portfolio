@@ -1,0 +1,12 @@
+<% @results = @blogs + @portfolios + @topics %>
+<%= @results.count %> Results
+
+
+
+<%= render @blogs %>
+
+<%= render @topics %>
+
+<%= render partial: 'portfolios/portfolio_item', collection: @portfolios %>
+
+

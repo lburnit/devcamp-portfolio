@@ -11,8 +11,7 @@
     </div>
     
     <div class="col-9">
-      <span class="cmts"><%= "Comments |" %></span>
-      <span class="counter"><%= "#{blog.comments.count}" %><span>
+      <span class="cmts"> <%= pluralize(blog.comments.count, "| Comment") %><span>
     </div>
   </div>
 

@@ -18,6 +18,7 @@ Rails.application.config.assets.precompile += %w( portfolios.scss )
 Rails.application.config.assets.precompile += %w( logos/BurnIt-Logo_full.png )
 Rails.application.config.assets.paths << Rails.root.join("app", "assets", "fonts")
 Rails.application.config.assets.precompile += %w( storys.scss )
+Rails.application.config.assets.precompile += %w( search.scss )
 Rails.application.config.assets.precompile += %w( images/mystorytest.jpg )
 
 

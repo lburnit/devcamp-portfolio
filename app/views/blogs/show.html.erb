@@ -25,12 +25,16 @@ I am the blogs SHOW
       
     </div>-->
   <div>
-    <span class="cmts">Comments |</span> <span class="counter"><%= "#{@comment_show}" %></span>
+    <span class="cmts">Comments |</span> <span class="counter"><%= "#{@comment_show}" %></span> <%= link_to 'Show All', discussion_comment_path %>
     </div>
+
+    <%= paginate @comments %>  
 
   <%= render 'comments/comment_form' %>
   </div>
-  <%= render @blog.comments %> 
+
+  <%= render @comments %> 
+
  <div class="progressContainer"><div id="progress" class="progress"></div></div>
 </div>
 

@@ -1,12 +1,67 @@
 <div class="container">
   <div class="row">
     <hr class="container">
-    <div class="col-12 comment-attribution">
+    <div class="comment-attribution">
       <span class="profile-picture"><%= gravatar_helper comment.user %></span> 
-      <span class="comment-name"><%= comment.user.first_name %></span> <%= distance_of_time_in_words(comment.created_at, Time.now)%>
+      <span class="comment-name"><%= comment.user.first_name %></span> <%= distance_of_time_in_words(comment.created_at, Time.now)%> 
+      <!-- if ok_button pressed, show edited in italics -->
       <div class="row">
-        <%= comment.content %>
+
+        <% if user_signed_in? && current_user.id == comment.user_id %>
+          <%= best_in_place comment, :content, :as => :textarea, url: update_my_comment_path(comment), ok_button: "Save", ok_button_class: "save-btn", cancel_button: "Cancel", cancel_button_class: "cancle-btn", class: 'text-area-resize', remote: :true %>
+          <div class="col-12">
+            <span class="edit">Click comment to edit</span> 
+          </div>
+        <% else %>
+          <%= comment.content %>
+        <% end %>
+
       </div>
     </div>
   </div>
 </div>
+
+      <div class="row">
+        <div class="col-2">
+
+        </div>
+
+        <div class="col-5">
+          <span class="shwalrpl">Show all replies | </span>
+          <span class="counter">X </span>
+        </div>
+
+        <div class="col-5 comment-attribution">
+
+        <% if user_signed_in? && current_user.id == comment.user_id %>
+          <span class="dlt-cmt"><%= link_to 'Delete', comment, method: :delete, remote: :true, data: { confirm: 'Are you sure'} %></span>
+           <%= link_to 'Reply', new_comment_path(:parent_id => comment) %><!--<%= link_to "Reply", new_comment_path(@blog, comment, parent_id: comment.id, js: true), remote: true %>-->
+
+          <span class="heart-like-unlike" id="votes-<%= comment.id%>">
+            <%= render partial: 'comments/log-in-actions', locals: { comment: comment }%>
+          </span>
+        <% else %>
+          <span class="heart-like-unlike" id="votes-<%= comment.id%>">
+            <%= link_to '', new_user_registration_path, class: "fa fa-heart " %>
+          </span>
+        <% end %>
+
+          
+          <span class="likes-count" id="likes-<%= comment.id %>">
+            <%= comment.get_likes.size %>
+          </span>
+
+        </div>
+      </div> 
+
+
+
+
+
+
+
+
+
+
+
+
